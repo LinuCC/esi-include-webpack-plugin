@@ -93,7 +93,7 @@ class EsiIncludeWebpackPlugin {
   }
 
   replace(html) {
-    let newHtml = html;
+    let newHtml = html.toString();
     this.replacers.forEach(replacer => {
       // Convert search string to regex to do:
       //    - Global replace (every instance not just the first)
